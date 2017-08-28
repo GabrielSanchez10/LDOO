@@ -1,0 +1,39 @@
+<!doctype html>
+	<html>
+		<head>
+			<script>
+				function enviar (){
+					var nombre = document.getElementById("txt.Nombre").value;
+					var primerApellido = document.getElementById("txtPrimerApellido").value;
+					var segundoApellido = document.getElementById("txtSegundoApellido").value;
+					var nombreCompleto = nombre + " " + primerApellido + " " + segundoApellido;
+					
+						document.getElementById("nombreCompleto").innerHTML = nombreCompleto
+						}
+						
+				</script>
+					
+		</head>
+		
+			<body style="background-color:red;"/>
+			
+				<h1>Persona</h1>
+					<label for="nombre">Nombre: </label> 
+						<input id=(txtNombre) type="text" onclick="enviar()"/>
+							<br></br>
+				
+					<label for="primer apellido">Primer Apellido: </label>
+						<input id=(txtPrimerApellido) type="text" onclick="enviar()"/>
+							<br></br>
+						
+				<label for="segundo apellido">Segundo Apellido: </label>
+						<input id=(txtSegundoApellido) type="text" onclick="enviar()/>"
+							<br></br>
+							
+					<input type="submit" value="Enviar"/>
+
+				<label id="nombreCompleto"></label>
+			
+			</body>
+	</html>
+	
